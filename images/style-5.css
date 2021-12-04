@@ -1,0 +1,104 @@
+#Wiki-slider{
+    overflow: hidden;
+}
+
+.Wiki{
+    margin:0 15px;
+}
+
+.Wiki .Wiki-content{
+    
+    /*background:#f1f1f1;*/
+    border-bottom:0px solid #ac0357;
+	text-align:left;
+}
+
+.Wiki .description{
+    font-size: 15px;
+    color:#555;
+    line-height:24px;
+    margin-bottom:20px;
+}
+
+.Wiki .Wiki-title{
+    font-size: 16px;
+    font-weight: bold;
+    color:#ac0357;
+    text-transform:capitalize;
+    text-align:center;
+    display: block;
+    margin: 10px;
+}
+
+.Wiki .Wiki-title small{
+    display: block;
+    margin-top: 13px;
+    font-size:14px;
+}
+
+.Wiki .pic{
+    width: 83px;
+    height: 90px;
+    border-bottom: 4px solid #ac0357;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+
+.Wiki .pic img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #808080;
+    border-radius:50%;
+}
+
+.wiki-theme .wiki-controls .wiki-buttons div{
+    position:relative;
+    border-radius: 0;
+    background:#005990;
+    padding: 7px 10px;
+    transition: all 0.5s ease 0s;
+}
+
+.wiki-theme .wiki-controls .wiki-buttons div:hover{
+    background:#a4c634;
+}
+
+.wiki-theme .wiki-controls .wiki-buttons .wiki-prev,
+.wiki-theme .wiki-controls .wiki-buttons .wiki-next{
+    position: absolute;
+    top: 47%;
+    opacity:0;
+    border-top-right-radius:1px;
+    border-bottom-right-radius:1px;
+    transition: all 0.50s linear;
+}
+
+.wiki-theme .wiki-controls .wiki-buttons .wiki-prev{
+    left: -7%;
+}
+
+.wiki-theme .wiki-controls .wiki-buttons .wiki-next{
+    right: -7%;
+    border-radius: 1px 0 0 1px;
+}
+
+.wiki-carousel:hover .wiki-buttons .wiki-prev{
+    opacity: 1;
+    left:-5px;
+}
+
+.wiki-carousel:hover .wiki-buttons .wiki-next{
+    opacity: 1;
+    right:-5px;
+}
+
+.wiki-prev:before,
+.wiki-next:before{
+    content: "\f053";
+    font-family: 'FontAwesome';
+    color: #fff;
+}
+
+.wiki-next:before{
+    content: "\f054";
+}
